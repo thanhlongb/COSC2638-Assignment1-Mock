@@ -1,0 +1,341 @@
+[2021-07-24 04:53:02] local.ERROR: {
+  "error": {
+    "code": 400,
+    "message": "Syntax error: Unexpected keyword GROUP at [6:9]",
+    "errors": [
+      {
+        "message": "Syntax error: Unexpected keyword GROUP at [6:9]",
+        "domain": "global",
+        "reason": "invalidQuery",
+        "location": "q",
+        "locationType": "parameter"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+ {"exception":"[object] (Google\\Cloud\\Core\\Exception\\BadRequestException(code: 400): {
+  \"error\": {
+    \"code\": 400,
+    \"message\": \"Syntax error: Unexpected keyword GROUP at [6:9]\",
+    \"errors\": [
+      {
+        \"message\": \"Syntax error: Unexpected keyword GROUP at [6:9]\",
+        \"domain\": \"global\",
+        \"reason\": \"invalidQuery\",
+        \"location\": \"q\",
+        \"locationType\": \"parameter\"
+      }
+    ],
+    \"status\": \"INVALID_ARGUMENT\"
+  }
+}
+ at /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php:368)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php(207): Google\\Cloud\\Core\\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\\Exception\\ClientException))
+#1 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RestTrait.php(97): Google\\Cloud\\Core\\RequestWrapper->send(Object(GuzzleHttp\\Psr7\\Request), Array)
+#2 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-bigquery/src/Connection/Rest.php(203): Google\\Cloud\\BigQuery\\Connection\\Rest->send('jobs', 'getQueryResults', Array)
+#3 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-bigquery/src/Job.php(200): Google\\Cloud\\BigQuery\\Connection\\Rest->getQueryResults(Array)
+#4 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(120): Google\\Cloud\\BigQuery\\Job->queryResults()
+#5 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(88): App\\Http\\Controllers\\EmployeeController->getNameFrequency('')
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#7 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#10 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#15 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#16 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#17 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#18 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 
+[2021-07-24 04:53:45] local.ERROR: {
+  "error": {
+    "code": 400,
+    "message": "Syntax error: Unexpected keyword GROUP at [6:9]",
+    "errors": [
+      {
+        "message": "Syntax error: Unexpected keyword GROUP at [6:9]",
+        "domain": "global",
+        "reason": "invalidQuery",
+        "location": "q",
+        "locationType": "parameter"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+ {"exception":"[object] (Google\\Cloud\\Core\\Exception\\BadRequestException(code: 400): {
+  \"error\": {
+    \"code\": 400,
+    \"message\": \"Syntax error: Unexpected keyword GROUP at [6:9]\",
+    \"errors\": [
+      {
+        \"message\": \"Syntax error: Unexpected keyword GROUP at [6:9]\",
+        \"domain\": \"global\",
+        \"reason\": \"invalidQuery\",
+        \"location\": \"q\",
+        \"locationType\": \"parameter\"
+      }
+    ],
+    \"status\": \"INVALID_ARGUMENT\"
+  }
+}
+ at /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php:368)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php(207): Google\\Cloud\\Core\\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\\Exception\\ClientException))
+#1 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RestTrait.php(97): Google\\Cloud\\Core\\RequestWrapper->send(Object(GuzzleHttp\\Psr7\\Request), Array)
+#2 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-bigquery/src/Connection/Rest.php(203): Google\\Cloud\\BigQuery\\Connection\\Rest->send('jobs', 'getQueryResults', Array)
+#3 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-bigquery/src/Job.php(200): Google\\Cloud\\BigQuery\\Connection\\Rest->getQueryResults(Array)
+#4 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(120): Google\\Cloud\\BigQuery\\Job->queryResults()
+#5 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(88): App\\Http\\Controllers\\EmployeeController->getNameFrequency('')
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#7 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#10 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#15 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#16 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#17 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#18 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 
+[2021-07-24 04:55:45] local.ERROR: {
+  "error": {
+    "code": 400,
+    "message": "Unrecognized name: long at [5:22]",
+    "errors": [
+      {
+        "message": "Unrecognized name: long at [5:22]",
+        "domain": "global",
+        "reason": "invalidQuery",
+        "location": "q",
+        "locationType": "parameter"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+ {"exception":"[object] (Google\\Cloud\\Core\\Exception\\BadRequestException(code: 400): {
+  \"error\": {
+    \"code\": 400,
+    \"message\": \"Unrecognized name: long at [5:22]\",
+    \"errors\": [
+      {
+        \"message\": \"Unrecognized name: long at [5:22]\",
+        \"domain\": \"global\",
+        \"reason\": \"invalidQuery\",
+        \"location\": \"q\",
+        \"locationType\": \"parameter\"
+      }
+    ],
+    \"status\": \"INVALID_ARGUMENT\"
+  }
+}
+ at /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php:368)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php(207): Google\\Cloud\\Core\\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\\Exception\\ClientException))
+#1 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RestTrait.php(97): Google\\Cloud\\Core\\RequestWrapper->send(Object(GuzzleHttp\\Psr7\\Request), Array)
+#2 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-bigquery/src/Connection/Rest.php(203): Google\\Cloud\\BigQuery\\Connection\\Rest->send('jobs', 'getQueryResults', Array)
+#3 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-bigquery/src/Job.php(200): Google\\Cloud\\BigQuery\\Connection\\Rest->getQueryResults(Array)
+#4 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(122): Google\\Cloud\\BigQuery\\Job->queryResults()
+#5 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(89): App\\Http\\Controllers\\EmployeeController->getNameFrequency('long')
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#7 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#10 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#15 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#16 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#17 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#18 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 
+[2021-07-24 04:56:17] local.ERROR: Undefined property: Google\Cloud\Core\Iterator\ItemIterator::$count {"exception":"[object] (ErrorException(code: 0): Undefined property: Google\\Cloud\\Core\\Iterator\\ItemIterator::$count at /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php:123)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(123): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined prope...', '/home/thanhlong...', 123, Array)
+#1 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(89): App\\Http\\Controllers\\EmployeeController->getNameFrequency('long')
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#8 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#9 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#10 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#15 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#16 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2021-07-24 05:03:20] local.ERROR: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' at /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php:124)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/composer/ClassLoader.php(346): Composer\\Autoload\\includeFile('/home/thanhlong...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\\\Http\\\\Contro...')
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(873): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#4 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(754): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(692): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#6 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Application.php(300): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(321): Laravel\\Lumen\\Application->make('App\\\\Http\\\\Contro...')
+#8 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 
+[2021-07-24 05:04:16] local.ERROR: Cannot use object of type Google\Cloud\BigQuery\QueryResults as array {"exception":"[object] (Error(code: 0): Cannot use object of type Google\\Cloud\\BigQuery\\QueryResults as array at /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php:123)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(89): App\\Http\\Controllers\\EmployeeController->getNameFrequency('long')
+#1 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#7 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#8 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#9 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#10 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#15 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2021-07-24 05:04:30] local.ERROR: Undefined property: Google\Cloud\BigQuery\QueryResults::$totalRows {"exception":"[object] (ErrorException(code: 0): Undefined property: Google\\Cloud\\BigQuery\\QueryResults::$totalRows at /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php:123)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(123): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined prope...', '/home/thanhlong...', 123, Array)
+#1 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(89): App\\Http\\Controllers\\EmployeeController->getNameFrequency('long')
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#8 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#9 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#10 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#15 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#16 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2021-07-24 05:05:42] local.ERROR: Cannot access private property Google\Cloud\BigQuery\QueryResults::$info {"exception":"[object] (Error(code: 0): Cannot access private property Google\\Cloud\\BigQuery\\QueryResults::$info at /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php:123)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(89): App\\Http\\Controllers\\EmployeeController->getNameFrequency('long')
+#1 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#7 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#8 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#9 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#10 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#15 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2021-07-24 05:28:28] local.ERROR: Cannot use object of type Google\Cloud\BigQuery\QueryResults as array {"exception":"[object] (Error(code: 0): Cannot use object of type Google\\Cloud\\BigQuery\\QueryResults as array at /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php:126)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(89): App\\Http\\Controllers\\EmployeeController->getNameFrequency('long')
+#1 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#7 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#8 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#9 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#10 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#15 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2021-07-24 07:55:21] local.ERROR: Call to a member function query() on null {"exception":"[object] (Error(code: 0): Call to a member function query() on null at /home/thanhlongb/gcloud/gcp/app/Models/EmployeeRepository.php:198)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/app/Models/EmployeeRepository.php(131): App\\Models\\EmployeeRepository->getNameFrequency('long')
+#1 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(47): App\\Models\\EmployeeRepository->getAll(NULL, NULL, NULL, NULL, true)
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->homeWithNameFrequency(Object(Laravel\\Lumen\\Http\\Request))
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#8 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#9 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'homeWithNameFre...', Array)
+#10 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#15 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#16 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2021-07-24 09:20:36] local.ERROR: syntax error, unexpected '}', expecting ';' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting ';' at /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php:42)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/composer/ClassLoader.php(346): Composer\\Autoload\\includeFile('/home/thanhlong...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\\\Http\\\\Contro...')
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(873): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#4 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(754): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(692): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#6 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Application.php(300): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(321): Laravel\\Lumen\\Application->make('App\\\\Http\\\\Contro...')
+#8 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 
+[2021-07-24 14:10:53] local.ERROR: Command "key" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"key\" is not defined. at /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php:682)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(255): Symfony\\Component\\Console\\Application->find('key')
+#1 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/console/Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/thanhlongb/gcloud/gcp/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 

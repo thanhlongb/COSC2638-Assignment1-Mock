@@ -1,0 +1,31 @@
+runtime: php74
+
+runtime_config:
+  document_root: public
+
+env_variables:
+  APP_ENV: local
+  APP_KEY: 10txj(mO]wZm+>h%9}p<
+  APP_DEBUG: false
+  LOG_CHANNEL: stackdriver
+  APP_STORAGE: /tmp
+  STORAGE_DIR: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  CACHE_DRIVER: database
+  SESSION_DRIVER: database
+  # cloud related envs
+  CLOUD_BUCKET_ID: rmit-gc-week2b
+  CLOUD_PROJECT_ID: rmit-gc
+  CLOUD_KEY_FILE: ../key.json
+  LOCAL_DATA_FILE: /tmp/employees.csv
+  CLOUD_DATA_FILE: employees.csv
+
+handlers:
+- url: /(.*\.(gif|png|jpg|css|js))$
+  static_files: public/\1
+  upload: public/.*\.(gif|png|jpg|css|js)$
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto

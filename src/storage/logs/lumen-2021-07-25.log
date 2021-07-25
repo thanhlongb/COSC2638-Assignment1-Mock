@@ -1,0 +1,9 @@
+[2021-07-25 01:17:28] local.ERROR: Command "view" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"view\" is not defined. at /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php:682)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(255): Symfony\\Component\\Console\\Application->find('view')
+#1 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/console/Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/thanhlongb/gcloud/gcp/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 

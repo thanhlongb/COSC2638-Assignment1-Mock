@@ -1,0 +1,110 @@
+[2021-07-03 07:31:40] local.ERROR: {
+  "error": {
+    "code": 403,
+    "message": "The project to be billed is associated with a delinquent billing account.",
+    "errors": [
+      {
+        "message": "The project to be billed is associated with a delinquent billing account.",
+        "domain": "global",
+        "reason": "accountDisabled",
+        "locationType": "header",
+        "location": "Authorization"
+      }
+    ]
+  }
+}
+ {"exception":"[object] (Google\\Cloud\\Core\\Exception\\ServiceException(code: 403): {
+  \"error\": {
+    \"code\": 403,
+    \"message\": \"The project to be billed is associated with a delinquent billing account.\",
+    \"errors\": [
+      {
+        \"message\": \"The project to be billed is associated with a delinquent billing account.\",
+        \"domain\": \"global\",
+        \"reason\": \"accountDisabled\",
+        \"locationType\": \"header\",
+        \"location\": \"Authorization\"
+      }
+    ]
+  }
+}
+ at /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php:368)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php(207): Google\\Cloud\\Core\\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\\Exception\\ClientException))
+#1 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/Upload/MultipartUploader.php(44): Google\\Cloud\\Core\\RequestWrapper->send(Object(GuzzleHttp\\Psr7\\Request), Array)
+#2 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-storage/src/Bucket.php(294): Google\\Cloud\\Core\\Upload\\MultipartUploader->upload()
+#3 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(111): Google\\Cloud\\Storage\\Bucket->upload(',<!DOCTYPE html...', Array)
+#4 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(122): App\\Http\\Controllers\\EmployeeController->exportEmployeeData()
+#5 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(75): App\\Http\\Controllers\\EmployeeController->createEmployee(Object(App\\Models\\Employee))
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->create(Object(Laravel\\Lumen\\Http\\Request))
+#7 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#10 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'create', Array)
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#15 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#16 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#17 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#18 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 
+[2021-07-03 07:44:06] local.ERROR: {
+  "error": {
+    "code": 403,
+    "message": "The project to be billed is associated with a delinquent billing account.",
+    "errors": [
+      {
+        "message": "The project to be billed is associated with a delinquent billing account.",
+        "domain": "global",
+        "reason": "accountDisabled",
+        "locationType": "header",
+        "location": "Authorization"
+      }
+    ]
+  }
+}
+ {"exception":"[object] (Google\\Cloud\\Core\\Exception\\ServiceException(code: 403): {
+  \"error\": {
+    \"code\": 403,
+    \"message\": \"The project to be billed is associated with a delinquent billing account.\",
+    \"errors\": [
+      {
+        \"message\": \"The project to be billed is associated with a delinquent billing account.\",
+        \"domain\": \"global\",
+        \"reason\": \"accountDisabled\",
+        \"locationType\": \"header\",
+        \"location\": \"Authorization\"
+      }
+    ]
+  }
+}
+ at /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php:368)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/RequestWrapper.php(207): Google\\Cloud\\Core\\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\\Exception\\ClientException))
+#1 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-core/src/Upload/MultipartUploader.php(44): Google\\Cloud\\Core\\RequestWrapper->send(Object(GuzzleHttp\\Psr7\\Request), Array)
+#2 /home/thanhlongb/gcloud/gcp/vendor/google/cloud-storage/src/Bucket.php(294): Google\\Cloud\\Core\\Upload\\MultipartUploader->upload()
+#3 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(111): Google\\Cloud\\Storage\\Bucket->upload(',<!DOCTYPE html...', Array)
+#4 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(122): App\\Http\\Controllers\\EmployeeController->exportEmployeeData()
+#5 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(75): App\\Http\\Controllers\\EmployeeController->createEmployee(Object(App\\Models\\Employee))
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->create(Object(Laravel\\Lumen\\Http\\Request))
+#7 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#10 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#11 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#13 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'create', Array)
+#14 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#15 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#16 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#17 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#18 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#19 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#20 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#21 {main}
+"} 

@@ -1,0 +1,53 @@
+[2021-07-13 18:59:58] local.ERROR: Please provide a valid cache path. {"exception":"[object] (InvalidArgumentException(code: 0): Please provide a valid cache path. at /home/thanhlongb/gcloud/gcp/vendor/illuminate/view/Compilers/Compiler.php:36)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/illuminate/view/ViewServiceProvider.php(88): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false)
+#1 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(869): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Laravel\\Lumen\\Application), Array)
+#2 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(754): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(692): Illuminate\\Container\\Container->resolve('blade.compiler', Array)
+#4 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Application.php(300): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#5 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(1418): Laravel\\Lumen\\Application->make('blade.compiler')
+#6 /home/thanhlongb/gcloud/gcp/vendor/illuminate/view/ViewServiceProvider.php(150): Illuminate\\Container\\Container->offsetGet('blade.compiler')
+#7 [internal function]: Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}()
+#8 /home/thanhlongb/gcloud/gcp/vendor/illuminate/view/Engines/EngineResolver.php(55): call_user_func(Object(Closure))
+#9 /home/thanhlongb/gcloud/gcp/vendor/illuminate/view/Factory.php(296): Illuminate\\View\\Engines\\EngineResolver->resolve('blade')
+#10 /home/thanhlongb/gcloud/gcp/vendor/illuminate/view/Factory.php(260): Illuminate\\View\\Factory->getEngineFromPath('/home/thanhlong...')
+#11 /home/thanhlongb/gcloud/gcp/vendor/illuminate/view/Factory.php(146): Illuminate\\View\\Factory->viewInstance('home', '/home/thanhlong...', Array)
+#12 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/helpers.php(433): Illuminate\\View\\Factory->make('home', Array, Array)
+#13 /home/thanhlongb/gcloud/gcp/app/Http/Controllers/EmployeeController.php(54): view('home', Array)
+#14 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\EmployeeController->home()
+#15 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#18 /home/thanhlongb/gcloud/gcp/vendor/illuminate/container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#19 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#20 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#21 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\EmployeeController), 'home', Array)
+#22 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#23 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#24 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#25 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#26 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#27 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#28 /home/thanhlongb/gcloud/gcp/public/index.php(28): Laravel\\Lumen\\Application->run()
+#29 {main}
+"} 
+[2021-07-13 19:03:45] local.ERROR: There are no commands defined in the "config" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"config\" namespace. at /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php:612)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(663): Symfony\\Component\\Console\\Application->findNamespace('config')
+#1 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(255): Symfony\\Component\\Console\\Application->find('config:clear')
+#2 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/console/Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /home/thanhlongb/gcloud/gcp/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2021-07-13 19:03:51] local.ERROR: There are no commands defined in the "view" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"view\" namespace. at /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php:612)
+[stacktrace]
+#0 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(663): Symfony\\Component\\Console\\Application->findNamespace('view')
+#1 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(255): Symfony\\Component\\Console\\Application->find('view:clear')
+#2 /home/thanhlongb/gcloud/gcp/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/thanhlongb/gcloud/gcp/vendor/illuminate/console/Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/thanhlongb/gcloud/gcp/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /home/thanhlongb/gcloud/gcp/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
